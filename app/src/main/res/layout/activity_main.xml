@@ -6,26 +6,210 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <Space
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/space"
+        android:layout_width="410dp"
+        android:layout_height="209dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <Space
+        android:id="@+id/space7"
+        android:layout_width="415dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <androidx.fragment.app.FragmentContainerView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/fragment_container_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.example.myapplication.ExampleFragment" />
-    <androidx.fragment.app.FragmentContainerView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/fragment_container_view2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:name="com.example.myapplication.ExampleFragment2" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="410dp"
+        android:layout_height="408dp"
+        android:rotation="86"
+        android:rotationY="-2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="412dp"
+        android:layout_height="200dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="532dp"
+
+        />
+
+    <Space
+        android:id="@+id/space5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <Space
+        android:id="@+id/space6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="410dp"
+        android:layout_height="62dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Space
+        android:id="@+id/space9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="417dp"
+        android:layout_height="68dp"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="62dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:srcCompat="@drawable/noun_arrow_left_1017674" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="115dp"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="98VSE2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="243dp"
+        android:layout_height="60dp"
+        android:text="Could not connect to the customer"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/space2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space6"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="76dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/space7"
+        app:layout_constraintEnd_toEndOf="@+id/space"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.473"
+        app:srcCompat="@drawable/green_phone_6861" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="369dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#B86B19"
+        android:text="Please contact support team and inform them about the customers unavailability to get the return task for this order"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:icon="@android:drawable/ic_dialog_info"
+        app:iconSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/space7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/space7" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="381dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="532dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Request a callback"
+        android:textStyle="bold"
+        app:backgroundTint="#62CA66"
+        app:cornerRadius="30dp"
+        app:icon="@android:drawable/stat_sys_phone_call"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="376dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="620dp"
+        android:fontFamily="sans-serif-black"
+        android:text="I found the customer"
+        android:textColor="#62CA66"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:backgroundTint="#ffffff"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="70dp"
+        android:layout_height="79dp"
+        android:rotation="124"
+        app:layout_constraintBottom_toBottomOf="@+id/space5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="114dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="@+id/space2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
