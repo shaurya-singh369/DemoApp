@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val intent = Intent(this, MainActivity2::class.java)
+
+        startActivity(intent)
         Log.d("Activity State ", "I am onCreate activity 1")
         //        GlobalScope.launch {
 //            val time = measureTimeMillis {

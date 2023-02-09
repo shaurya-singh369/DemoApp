@@ -1,13 +1,27 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.myapplication.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {
+    lateinit var binding: ActivityMain2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        binding = ActivityMain2Binding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.apply {
+            btnStart.setOnClickListener{
+                val intent = Intent(this@MainActivity2,MyService::class.java)
+                startService(intent)
+            }
+            btnStop.setOnClickListener{
+                val intent = Intent(this@MainActivity2,MyService::class.java)
+                stopService(intent)
+            }
+        }
         Log.d("Activity State ","I am onCreate activity 2")
     }
     override fun onStart()
