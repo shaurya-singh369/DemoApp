@@ -9,14 +9,12 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
-import kotlin.system.measureTimeMillis
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val intent = Intent(this, MainActivity2::class.java)
-
+        val intent = Intent(this, RetrofitActivity::class.java)
         startActivity(intent)
         Log.d("Activity State ", "I am onCreate activity 1")
         //        GlobalScope.launch {
