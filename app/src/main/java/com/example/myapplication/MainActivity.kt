@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val intent = Intent(this, RetrofitActivity::class.java)
+        val intent = Intent(this, NotificationActivity::class.java)
         startActivity(intent)
         Log.d("Activity State ", "I am onCreate activity 1")
         //        GlobalScope.launch {

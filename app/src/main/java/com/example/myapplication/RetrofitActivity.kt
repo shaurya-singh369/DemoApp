@@ -29,6 +29,7 @@ class RetrofitActivity : AppCompatActivity() {
                 val response = apiInterface.getAllUsers()
                 if (response.isSuccessful()) {
                     var json = Gson().toJson(response.body())
+                    Log.d("Response", json)
                     if (response.body()?.data?.size!! <= 0) {
                         Toast.makeText(
                             this@RetrofitActivity,
@@ -40,7 +41,7 @@ class RetrofitActivity : AppCompatActivity() {
                     }
 
                     //new
-                    /* if(response?.body()!!.support.text.contains("Harshita")){
+                    /* if(response?.body()!!.support.text.contains("Shaurya")){
                          Toast.makeText(
                              this@MainActivity,
                              "Hello Retrofit",
